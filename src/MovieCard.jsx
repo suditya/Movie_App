@@ -1,10 +1,15 @@
 import React from 'react';
+import { Link, Routes, Route } from 'react-router-dom';
 
 const MovieCard = (movie) => {
+    console.log(movie.movie.imdbID);
+    
     return (
         
+        
+        <Link to={`/movie/${movie.movie.imdbID}`}>
         <div className="movie">
-            {console.log(movie, "movies")}
+            {/* {console.log(movie, "movies")} */}
             <div>
                 <p>{movie.movie.Year}</p>
             </div>
@@ -20,6 +25,7 @@ const MovieCard = (movie) => {
                 </h3>
             </div>
         </div>
+        </Link>
     )
 }
 

@@ -2,9 +2,8 @@ import { useEffect, useState } from "react";
 import './App.css';
 import MovieCard from "./MovieCard";
 import SearchIcon from "./search.svg";
-import FormComponent from "./FormComponent";
 const API_URL = "https://www.omdbapi.com/?i=tt3896198&apikey=21bb3c33";
-
+// https://www.omdbapi.com/?i=tt0848228&apikey=21bb3c33`
 // const movie1 =
 // {
 //     "Title": "The Avengers",
@@ -62,16 +61,9 @@ const App = () => {
                         </div>
                     )
             }
-            {/* <div className="conatainer">
-                {
-                    console.log(movies, " movies in app.js")
-                }
-                <MovieCard movie={movies[0]} ></MovieCard>
-            </div> */}
+         
 
-            <div className="form">
-                <FormComponent/>
-            </div>
+           
         </div>
     )
 }
